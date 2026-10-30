@@ -17,8 +17,6 @@ Search Deezer, queue tracks, albums, playlists and full artist discographies, wa
   <img src="docs/screenshots/hero.png" alt="Deezload Web — search page" width="900">
 </p>
 
-> 📸 **Screenshot placeholder:** `docs/screenshots/hero.png` — a wide shot of the Search page with a few results.
-
 ---
 
 ## ✨ Features
