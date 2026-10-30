@@ -63,20 +63,11 @@ Search Deezer, queue tracks, albums, playlists and full artist discographies, wa
 
 ## 📸 Screenshots
 
-Add three images to `docs/screenshots/` using these filenames and they will show up here:
-
-| File | What to capture |
-|---|---|
-| `hero.png` | The Search page with a few results (shown at the top of this README) |
-| `queue.png` | A running job with the track list expanded |
-| `library.png` | An album folder open, with the audio player at the bottom |
-| `library.png` | Where the ARL token is set along with the downloader preferences |
-
-<p align="center">
-  <img src="docs/screenshots/queue.png" alt="Queue page" width="45%">
-  <img src="docs/screenshots/library.png" alt="Library page" width="45%">
-  <img src="docs/screenshots/settings.png" alt="Library page" width="45%">
-</p>
+| **Main** | **Queue** |
+|:---:|:---:|
+| ![Main — The main landing page](docs/screenshots/main.png) | ![Queue — List of active downloads](docs/screenshots/queue.png) |
+| **Library** | **Settings** |
+| ![Library — Download and delete items](docs/screenshots/library.png) | ![Settings — Set ARL token and preferences](docs/screenshots/settings.png) |
 
 ---
 
