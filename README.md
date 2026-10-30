@@ -70,10 +70,12 @@ Add three images to `docs/screenshots/` using these filenames and they will show
 | `hero.png` | The Search page with a few results (shown at the top of this README) |
 | `queue.png` | A running job with the track list expanded |
 | `library.png` | An album folder open, with the audio player at the bottom |
+| `library.png` | Where the ARL token is set along with the downloader preferences |
 
 <p align="center">
   <img src="docs/screenshots/queue.png" alt="Queue page" width="45%">
   <img src="docs/screenshots/library.png" alt="Library page" width="45%">
+  <img src="docs/screenshots/settings.png" alt="Library page" width="45%">
 </p>
 
 ---
