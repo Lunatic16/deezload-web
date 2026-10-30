@@ -1,0 +1,32 @@
+services:
+  backend:
+    build: ./backend
+    container_name: deezload-backend
+    restart: unless-stopped
+    # Run as your own user so files in ./downloads are owned by you.
+    # Create the folders first:  mkdir -p downloads config
+    user: "${PUID:-1000}:${PGID:-1000}"
+    environment:
+      DOWNLOAD_DIR: /downloads
+      CONFIG_DIR: /config
+      # Optional: pre-seed the token instead of entering it in Settings.
+      DEEZLOAD_ARL: "${DEEZLOAD_ARL:-}"
+    volumes:
+      - ${DOWNLOADS_PATH:-./downloads}:/downloads
+      - ${CONFIG_PATH:-./config}:/config
+    expose:
+      - "8000"
+
+  web:
+    build: ./frontend
+    container_name: deezload-web
+    restart: unless-stopped
+    depends_on:
+      - backend
+    environment:
+      BACKEND_URL: http://backend:8000
+      # Optional HTTP Basic auth — strongly recommended if reachable beyond localhost.
+      APP_USER: "${APP_USER:-admin}"
+      APP_PASSWORD: "${APP_PASSWORD:-}"
+    ports:
+      - "${WEB_PORT:-3000}:3000"
